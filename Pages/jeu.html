@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../style.css" />
+    <title>Le site de Théo | Jeu</title>
+  </head>
+
+  <body class="pages">
+    <nav>
+		<ul>
+			<li><a href="../index.html" class="banniere">Menu</a></li>
+			<li><a href="defis.html" class="banniere">Défis</a></li>
+		</ul>
+	</nav>
+	<div>
+		<h1>Morpion</h1>
+	</div>
+  <div>
+    <input type="button" id="case1" onclick="morpion('a1');" value="">
+    <input type="button" id="case2" onclick="morpion('a2');" value="">
+    <input type="button" id="case3" onclick="morpion('a3');" value="">
+  </div>
+  <div>
+    <input type="button" id="case4" onclick="morpion('b1');" value="">
+    <input type="button" id="case5" onclick="morpion('b2');" value="">
+    <input type="button" id="case6" onclick="morpion('b3');" value="">
+  </div>
+  <div>
+    <input type="button" id="case7" onclick="morpion('c1');" value="">
+    <input type="button" id="case8" onclick="morpion('c2');" value="">
+    <input type="button" id="case9" onclick="morpion('c3');" value="">
+  </div>
+  <div>
+    <p id="partieTerminee"></p>
+  </div>
+  <div>
+    <input type="button" id="boutonRecommencer" onclick="recommencer();" value="Nouvelle partie">
+  </div>
+  <script type="text/javascript" src = "../Javascript/scriptJeu.js">	</script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../style.css" />
+    <title>Le site de Théo | Défis</title>
+  </head>
+
+  <body class="pagedefis">
+    <nav>
+		<ul>
+			<li><a href="../index.html" class="banniere">Menu</a></li>
+			<li><a href="jeu.html" class="banniere">Jouer</a></li>
+		</ul>
+	</nav>
+	<div>
+		<h1>Défis</h1>
+	</div>
+	<div>
+		<h2>Défi n°1:</h2>
+	</div>
+	<div>
+		<input type="button" onclick="changeCouleurFond('#FFC300');" value="Fond de couleur 1">
+		<input type="button" onclick="changeCouleurFond('#5d6d7e');" value="Fond de couleur 2">
+		<input type="button" onclick="changeCouleurFond('Black');" value="Fond de couleur 3">
+	</div>
+	<div>
+		<h2>Défi n°2:</h2>
+	</div>
+	<div>
+		<h3 id="defi2" onmouseover="changeCouleurOver()" onmouseout="changeCouleurOut()">Change de couleur</h3>
+	</div>
+  <div>
+		<h2>Défi n°3:</h2>
+	</div>
+  <div>
+    <p id="defi3"></p>
+    <input type="button" onclick="changeTexteDefi3('Ceci est le texte 1');" value="Texte 1">
+		<input type="button" onclick="changeTexteDefi3('Et voici le texte 2');" value="Texte 2">
+  </div>
+  <div>
+		<h2>Défi n°4:</h2>
+	</div>
+  <div>
+    <p id="defi4">0</p>
+    <input type="button" onclick="compteurDeClique()" value="Cliquez">
+  </div>
+  <div>
+		<h2>Défi n°5:</h2>
+	</div>
+  <div>
+    <p id="defi5">Ce texte peut être agrandi</p>
+    <input type="button" onclick="diminueTaille();" value="-">
+		<input type="button" onclick="augmenteTaille();" value="+">
+  </div>
+  <div>
+		<h2>Défi n°6:</h2>
+	</div>
+  <div>
+    <table>
+  		<thead>
+  			<tr>
+  				<th colspan="2" class="texte">Résultat des dés:</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+  				<td id="de1" class="texte">1</td>
+  				<td id="de2" class="texte">1</td>
+  			</tr>
+  		</tbody>
+  	</table>
+    <input type="button" onclick="lancerDes()" value="Lancer les dés">
+  </div>
+  <div>
+		<h2>Défi n°7:</h2>
+	</div>
+  <div>
+    <p id="defi7"></p>
+    <input type="button" onclick="fondAleatoire()" value="Fond aléatoire">
+  </div>
+  <div>
+		<h2>Défi n°8:</h2>
+	</div>
+  <div>
+    <h3 id="defi8">Change de couleur</h3>
+    <input type="button" onclick="inverseFondTexte()" value="Inverser">
+  </div>
+  <div>
+		<h2>Défi n°9:</h2>
+	</div>
+  <div>
+    <h3>ChiFouMi</h3>
+  </div>
+  <div>
+    <p id='defi9choix'></p>
+  </div>
+  <div>
+    <p id='defi9reponse'></p>
+  </div>
+  <div>
+    <input type="button" onclick="chifoumi(0);" value="Pierre">
+    <input type="button" onclick="chifoumi(1);" value="Feuille">
+    <input type="button" onclick="chifoumi(2);" value="ciseaux">
+  </div>
+  <div>
+		<h2>Défi n°10:</h2>
+	</div>
+  <div id="display">
+    <p class="centre">Zone bleue</p>
+  </div>
+  <div id="visibility">
+    <p class="centre">Zone verte</p>
+  </div>
+  <div>
+    <input type="button" onclick="displayOff();" value="style.display (désactivé)">
+    <input type="button" onclick="visibilityOff();" value="style.visibility (désactivé)">
+  </div>
+  <div>
+		<h2>Défi n°11:</h2>
+	</div>
+  <div>
+    <p id="defi11">0</p>
+    <input type="button" onclick="troisCliques();" value="Trois cliques">
+    <input type="button" onclick="activeClique();" id="boutonCache" value="Débloquage">
+  </div>
+  <div>
+		<h2>Défi n°12:</h2>
+	</div>
+  <div>
+    <p>Entrez la couleur que vous souhaitez pour le fond d'écran</p>
+    <input id="rouge" type="text" maxlength="3"/>
+    <input id="vert" type="text" maxlength="3"/>
+    <input id="bleu" type="text" maxlength="3"/>
+    <input type="button" onclick="fondPersonnalise();" value="Valider">
+  </div>
+  <div>
+		<h2>Défi n°13:</h2>
+	</div>
+  <div>
+    <h3>Plus ou Moins</h3>
+    <p>Le nombre est compris entre 0 et 501 exclus</p>
+    <input type="button" onclick="plusOuMoins();" value="Jouer">
+    <p id="reponse"></p>
+    <input id="texteReponse" type="text"/>
+    <input type="button" onclick="validerPlusOuMoins();" value="Valider">
+  </div>
+  <script type="text/javascript" src = "../Javascript/scriptDefis.js">	</script>
+  </body>
+</html>
